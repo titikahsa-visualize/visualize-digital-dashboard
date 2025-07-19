@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Dashboard from './components/dashboard/Dashboard';
-import ContactForm from './components/Contact/ContactForm';
+import Embedded from './components/EmbeddedSite/Embedded';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/contact" element={<ContactForm />} />
+          <Route path="/contact" element={<Embedded />} />
         </Routes>
       </div>
     </Router>
