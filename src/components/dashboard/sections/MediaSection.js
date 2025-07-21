@@ -55,7 +55,7 @@ export default React.forwardRef(function MediaSection(props, ref) {
   };
 
   const handleCopyLink = (id, url) => {
-      const fullUrl = `${url}${url}`;
+      const fullUrl = `https://visualize-digital-server-production.up.railway.app${url}`;
     navigator.clipboard.writeText(fullUrl);
     setCopiedId(id);
     setTimeout(() => {
