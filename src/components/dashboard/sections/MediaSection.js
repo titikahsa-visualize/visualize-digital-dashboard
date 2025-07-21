@@ -293,7 +293,7 @@ const handleDeleteMedia = async (id) => {
                       </div>
                     ) : (
                       <img 
-                        src={`http://localhost:5000${item.url}?t=${imageTimestamps[item.id] || Date.now()}`}
+                        src={`https://visualize-digital-server-production.up.railway.app${item.url}?t=${imageTimestamps[item.id] || Date.now()}`}
                         alt={item.name} 
                         className="h-full w-full object-contain"
                         onError={() => setFailedImages(prev => ({...prev, [item.id]: true}))}
