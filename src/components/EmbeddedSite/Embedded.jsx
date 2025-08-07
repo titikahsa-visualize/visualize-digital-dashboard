@@ -4,7 +4,7 @@ const EmbeddedApp = () => {
   return (
     <div style={{ height: '100vh' }}>
       <iframe
-        src="https://visualize-digital-frontend.vercel.app/"  // Replace with your target URL or port
+        src="http://172.20.10.2:8080/"  // Replace with your target URL or port
         title="External App"
         style={{
           width: '100%',

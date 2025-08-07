@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const BASE_URL = 'http://localhost:5000'; // Adjust if needed
-const BASE_URL = 'https://visualize-digital-server-production.up.railway.app';
+const BASE_URL = 'http://localhost:5000';
 
 // ✅ GET all SEO services
 export const getAllSeoServices = async () => {

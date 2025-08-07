@@ -284,7 +284,7 @@ export default React.forwardRef(function BlogSection(props, ref) {
   const [showBlogForm, setShowBlogForm] = useState(false);
   const [currentBlog, setCurrentBlog] = useState(getInitialBlog());
   const [isEditBlog, setIsEditBlog] = useState(false);
-  const [loading, setLoading] = useState(false);
+  //const [loading, setLoading] = useState(false);
 
   function getInitialBlog() {
     return {
@@ -308,14 +308,14 @@ export default React.forwardRef(function BlogSection(props, ref) {
   }, []);
 
   const fetchBlogs = async () => {
-    setLoading(true);
+   // setLoading(true);
     try {
       const response = await getAllBlogs();
       setBlogs(response);
     } catch (err) {
       console.error('Error fetching blogs:', err);
     } finally {
-      setLoading(false);
+   //   setLoading(false);
     }
   };
 

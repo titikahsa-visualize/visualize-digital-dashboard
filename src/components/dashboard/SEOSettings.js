@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
   XMarkIcon,
-  PlusIcon,
 } from '@heroicons/react/24/outline';
 
 export default function SEOSettings() {

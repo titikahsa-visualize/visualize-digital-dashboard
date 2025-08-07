@@ -58,7 +58,7 @@ export default function Dashboard() {
     
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [sectionRefs]);
 
   return (
     <div className="min-h-screen flex bg-[#0B1120] text-white font-sans">

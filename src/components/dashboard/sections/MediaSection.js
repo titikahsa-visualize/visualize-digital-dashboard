@@ -21,7 +21,7 @@ export default React.forwardRef(function MediaSection(props, ref) {
   const [failedImages, setFailedImages] = useState({});
   // Add this state for image timestamps
   const [imageTimestamps, setImageTimestamps] = useState({});
-  const url = 'https://visualize-digital-server-production.up.railway.app'; // Adjust the base URL as needed
+  const url = 'http://localhost:5000'; // Adjust the base URL as needed
 
   useEffect(() => {
     fetchMedia();
@@ -55,7 +55,7 @@ export default React.forwardRef(function MediaSection(props, ref) {
   };
 
   const handleCopyLink = (id, url) => {
-      const fullUrl = `https://visualize-digital-server-production.up.railway.app${url}`;
+      const fullUrl = `http://localhost:5000${url}`;
     navigator.clipboard.writeText(fullUrl);
     setCopiedId(id);
     setTimeout(() => {
@@ -293,7 +293,7 @@ const handleDeleteMedia = async (id) => {
                       </div>
                     ) : (
                       <img 
-                        src={`https://visualize-digital-server-production.up.railway.app${item.url}?t=${imageTimestamps[item.id] || Date.now()}`}
+                        src={`http://localhost:5000${item.url}?t=${imageTimestamps[item.id] || Date.now()}`}
                         alt={item.name} 
                         className="h-full w-full object-contain"
                         onError={() => setFailedImages(prev => ({...prev, [item.id]: true}))}

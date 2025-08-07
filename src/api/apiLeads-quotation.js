@@ -1,5 +1,5 @@
 import axios from 'axios';
-const BASE_URL = 'https://visualize-digital-server-production.up.railway.app';
+const BASE_URL = 'http://localhost:5000';
 
 // const BASE_URL = 'http://localhost:5000'; // Adjust the base URL as needed
 
